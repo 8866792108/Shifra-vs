@@ -25,9 +25,9 @@ function wish() {
     }
 }
 
-// window.addEventListener("load",()=>{
-//     wish()
-// })
+window.addEventListener("load",()=>{
+    wish()
+})
 
 let speechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
 let recognition = new speechRecognition()
@@ -62,6 +62,8 @@ function takecommand(transcript) {
         spoke("Hello Sir, What can i help you?")
     } else if (transcript.includes("who are you")) {
         spoke("i am virtual assistant,created by sanjay")
+    }else if (transcript.includes("what is your name")) {
+        spoke("i am shifra alias vitual assistant")
     } else if (transcript.includes("open google")) {
         window.open("https://www.google.com/", "_blank")
     } else if (transcript.includes("open youtube")) {
@@ -78,6 +80,9 @@ function takecommand(transcript) {
     }else if(transcript.includes("open whatsapp")){
         spoke("opening whatsapp")
         window.open("whatsapp://")
+    }else if(transcript.includes("open snapchat")){
+        spoke("opening snapchat")
+        window.open("snapchat://")
     }
     else {
         let msg = transcript.replace("shifra", "") && transcript.replace("shipra", "")
