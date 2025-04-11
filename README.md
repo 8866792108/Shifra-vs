@@ -1,6 +1,6 @@
 # Shifra Virtual Assistant
 
-![Shifra Virtual Assistant](assets/virtualassistant.jpg)
+![Shifra Virtual Assistant](https://github.com/8866792108/Shifra-vs/blob/main/virtual.jpg)
 
 ## 🌐 Live Preview
 
